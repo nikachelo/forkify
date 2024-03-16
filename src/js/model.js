@@ -1,4 +1,4 @@
-import { API_URL } from './config';
+// import { API_URL } from './config';
 import { getJSON } from './helpers';
 export const state = {
   recipe: {},
@@ -11,6 +11,8 @@ export const state = {
   bookmarks: [],
 };
 
+
+const API_URL = https://forkify-api.herokuapp.com/api/v2/recipes/
 export const loadRecipe = async function (id) {
   try {
     const data = await getJSON(`${API_URL}/${id}`);
